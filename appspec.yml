@@ -5,6 +5,10 @@ files:
   - source: ./
     destination: /var/www/html
     overwrite: yes
+    
+permissions:
+    - object:  scripts/stop_apache.sh
+      mode: 777
 
 hooks:
   BeforeInstall:
